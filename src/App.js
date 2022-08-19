@@ -39,14 +39,14 @@ function App() {
         <button onClick={() => setShowEvents(true)}>Show events</button>
       </div>}
       
-      {showEvents && <EventList events={events} handleClick={handleClick} isSalesModal={true}/>}
+      {showEvents && <EventList events={events} handleClick={handleClick} />}
       
       {/* <Modal>
           <h2>10% Off Coupon Code!!!</h2>
           <p>Use the code NINJA10 at the checkout.</p>
       </Modal> */}
       <button onClick={() => setShowModal(true)}>Show Terms & Conditions</button>
-      {showModal && <Modal handleClose={handleClose}>
+      {showModal && <Modal handleClose={handleClose} isSalesModal={true}>
         <h2>Terms and Conditions</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam repudiandae sequi doloremque rem corrupti accusantium? Ex incidunt nostrum neque sapiente maiores voluptatibus tempora debitis sint! Quod cumque temporibus veritatis minima ducimus error commodi laborum, sed saepe aut, quidem ipsa at.</p>
       </Modal>}
