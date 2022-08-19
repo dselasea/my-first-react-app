@@ -13,4 +13,4 @@ function EventList({events, handleClick}) {
   )
 }
 
-export default EventList
+export default EventList;
