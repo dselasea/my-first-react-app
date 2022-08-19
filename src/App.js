@@ -39,7 +39,7 @@ function App() {
         <button onClick={() => setShowEvents(true)}>Show events</button>
       </div>}
       
-      {showEvents && <EventList events={events} handleClick={handleClick}/>}
+      {showEvents && <EventList events={events} handleClick={handleClick} isSalesModal={true}/>}
       
       {/* <Modal>
           <h2>10% Off Coupon Code!!!</h2>
